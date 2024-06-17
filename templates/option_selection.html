@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Options</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sttz.css' %}">
+</head>
+<body>
+    <h1>Select Your Goal</h1>
+    <form method="post" action="{% url 'generate_year_plan' id=id  %}">
+        {% csrf_token %}
+  
+        <p>Choose one of the following options:</p>
+        <div class="options-container">
+            {% for option in options %}
+                <div class="card">
+                    <input type="hidden" name="long_term_goa" value="{{ long_term_goal }}">
+                    <input type="radio" id="{{ option }}" name="long_term_goal" value="{{ option }}">
+                    <label for="{{ option }}">{{ option }}</label>
+    
+                </div>
+            {% endfor %}
+        </div>
+    
+        <button type="submit">Select Goal</button>
+    </form>
+</body>
+</html>

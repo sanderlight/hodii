@@ -1,0 +1,46 @@
+.month-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.swiper-container {
+    width: 50%;
+    height: 100px;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+
+body {
+    background: linear-gradient(rgb(246, 200, 224), rgb(201, 0, 114));
+    
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+  
+    
+  }
+  
+  *{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --primary-color: #fff;
+  }

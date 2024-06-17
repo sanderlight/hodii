@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets dream</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stati.css' %}">
+    
+</head>
+<body>
+    <h1>Life starts now</h1>
+   <div class="login-box">
+    <form method="post" action="{% url 'index' %}">
+        {% csrf_token %}
+        <div class="input-box">
+            {{ form.goal.label_tag }}
+            <input type="text" placeholder="DReAM" class="goal" name="goal" value="{{ form.goal.value}}">
+           
+            <button type="submit" class="but">GO</button>
+
+
+            
+            </div>
+        </form>
+
+    
+
+
+    </div>
+
+
+
+    
+
+
+    <div class="container">
+
+        <p class="text"> STEP 1: Think about what you need to accomplish this year</p>
+
+        <p class="text"> STEP 2: Now input your goal  in a detailed manner in the text box (output : will be given in a year, month , week, day display) </p>
+
+        <p class="text">EXAMPLE: "Improve my physical fitness by incorporating regular exercise and maintaining a balanced diet."</p>
+
+
+    </div>
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+<script>
+    function setInputValue(value) {
+        document.getElementById("id_goal").value = value;
+    }
+
+
+
+</script>

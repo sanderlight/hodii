@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(rgb(254, 195, 224), rgb(169, 1, 96));
+    
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+  
+    
+  }
+  
+
+
+.login-box{
+    position: center;
+    width: 700px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: color;
+    justify-content: center;
+    
+   
+}
+
+.input-box{
+    width: 310px;
+    height: 100px;
+    margin: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.container {display: inline-block}
+
+
+.text {
+
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: vowrap;
+    overflow: hidden;
+    text-align: center;
+    
+    animation: 
+    typing 2s steps(55),
+    cursor .4s step-end infinite alternate;
+}
+
+
+
+@keyframes cursor{
+
+    50% { border-color: transparent}
+}
+
+@keyframes typing {
+    from { width:0 }
+}
+
+
+.goal {
+    width: 80%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    background-color: #f8f8f8;
+    resize: none;
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensures it takes up full width */
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.but{
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: block;
+    width: 80px;
+    height: 50px;
+    padding: 12px 20px;
+    align-items: center;
+    position: relative;
+    right: -290px;
+    top: -50px;
+    text-align: center;
+
+}
+

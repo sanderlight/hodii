@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(rgb(246, 200, 224), rgb(201, 0, 114));
+    
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+  
+    
+  }
+  
+  *{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --primary-color: #fff
+
+  }
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        align-items: center;
+        display: flex;
+        left: 30px;
+        box-sizing: border-box; /* Include padding and border in width */
+        margin: 10px; /* Space between cards */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        transition: transform 0.2s, box-shadow 0.2s; /
+     
+    }
+
+
+    .card:hover {
+        transform: translateY(-5px); /* Slightly move up on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    }
+    
+    .card-body {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Ensure the card body takes full width */
+        height: 100%; 
+       
+        box-sizing: border-box;
+    
+    }
+    
+    .card-body input[type="radio"] {
+        margin-right: 10px;
+    }
+    
+    .card-body label {
+        font-weight: bold;
+    }
+
+
+    .options-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+    }
+
+
+    .card-body input[type="radio"]:checked + label {
+        background-color: #ffa3d4; /* Change to desired color */
+        border-radius: 10px; /* Match the card's border-radius */
+        padding: 10px; /* Match the card's padding */
+        width: calc(100% - 20px); /* Adjust width to account for padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }

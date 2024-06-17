@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(rgb(246, 200, 224), rgb(201, 0, 114));
+    
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+  
+    
+  }
+  
+  *{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --primary-color: #fff;
+  }
+
+
+   .card {
+    background-color: rgba(255, 255, 255, 0.308); /* White with 90% opacity */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: flex;
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 10px; /* Space between cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100px;
+
+
+}
+
+button {
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    right:50px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
