@@ -30,11 +30,6 @@ import uuid
 
 
 
-GOOGLE_API_KEY = "AIzaSyCGHBqSOuxZkCwwIh52sKqP1ZAqT4WvVn8"
-CSE_ID = "f5ebbb83b70c64a44"
-# Set up your OpenAI API key
-openai.api_key = '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'
-
 
 
 
